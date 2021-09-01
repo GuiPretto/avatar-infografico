@@ -21,7 +21,12 @@ const LocationMarker = ({ actualLocation }) => {
 
     return !actualLocation ? null : (
         <Marker position={[actualLocation.lat, actualLocation.long]}>
-            <Popup>{actualLocation.title}</Popup>
+            <Popup>
+                <h1 class="popUpTitle">{actualLocation.title}</h1>
+                <p class="popUp">Episódio de Estréia: {actualLocation.episodeTitle}</p>
+                <p class="popUp">Data: {actualLocation.data}</p>
+                <h3>{actualLocation.episode}</h3>                
+            </Popup>
         </Marker>
     )
 }

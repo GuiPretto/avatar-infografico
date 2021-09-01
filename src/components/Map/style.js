@@ -16,6 +16,18 @@ const Wrapper = styled.section`
     .leaflet-control-attribution {
         display: none;
     }
+
+    .popUp {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        margin: 0;
+      }
+    
+    .popUpTitle{
+        text-align:center;
+    }
+
 `
 
 export {
